@@ -45,6 +45,13 @@ router.post('/login', function(req, res, next) {
   else return res.redirect('/login');
 });
 
+/* Bài 11 - Static files (Tập tin tĩnh) trong Express*/
+router.get('/user/:username/info', function(req, res, next) {
+  const username = req.params.username;
+  res.render('userimg', { title: 'Express', name: username });
+});
+
+
 
 
 module.exports = router;

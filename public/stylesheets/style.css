@@ -101,3 +101,11 @@ footer {
   width: 50%;
   color: #fff;
 }
+
+/*custom img avatar*/
+
+.blurred-box .user-box img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
